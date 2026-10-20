@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:bot_toast/bot_toast.dart';
 
 class CustomAnimation extends StatefulWidget {
@@ -240,10 +240,6 @@ class CustomAttachedAnimation extends StatefulWidget {
 
 class _CustomAttachedAnimationState extends State<CustomAttachedAnimation> {
   late Animation<double> animation;
-  static final Tween<Offset> tweenOffset = Tween<Offset>(
-    begin: const Offset(0, 40),
-    end: const Offset(0, 0),
-  );
 
   @override
   void initState() {

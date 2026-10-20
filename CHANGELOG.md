@@ -1,3 +1,10 @@
+## [5.0.0]
+* **BREAKING**: Migrated to the new `material_ui` / `cupertino_ui` packages that are no longer part of the Flutter SDK. `package:flutter/material.dart` is no longer imported.
+* **BREAKING**: Requires Flutter `>=3.47.0` and Dart `>=3.13.0`.
+* fix: `Nil` is now a `mixin class` so it can be used as a mixin under Dart 3.
+* fix: Remove lints and analyzer options that were removed from the Dart SDK.
+* example: Migrated to `material_ui` / `cupertino_ui`, updated usage removed in recent Material versions.
+
 ## [4.1.3]
 * fix: Modify Assertion Logic
 

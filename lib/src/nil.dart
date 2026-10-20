@@ -7,7 +7,7 @@ import 'package:flutter/widgets.dart';
 
 import 'basis.dart';
 
-abstract class Nil {
+abstract mixin class Nil {
   @override
   int get hashCode => identityHashCode(this);
 

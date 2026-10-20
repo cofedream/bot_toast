@@ -38,6 +38,7 @@ build/
 
 # iOS/XCode related
 **/ios/**/*.mode1v3
+**/ios/Flutter/ephemeral/
 **/ios/**/*.mode2v3
 **/ios/**/*.moved-aside
 **/ios/**/*.pbxuser

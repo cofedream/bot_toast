@@ -55,8 +55,14 @@ Loading|Text|CustomWidget
 #### 1. pubspec.yaml文件里添加依赖
 ``` yaml
 dependencies:
-    bot_toast: ^4.1.0 #null safety
+    bot_toast: ^5.0.0 #null safety, 需要 Flutter >= 3.47.0
 ```
+
+> 从 Flutter 3.47 开始,Material 和 Cupertino 库被拆分到独立的
+> `material_ui` 和 `cupertino_ui` 包中。`bot_toast` 基于 `material_ui` 构建;
+> 如果希望 Toast 使用应用的主题,请同时导入 `package:material_ui/material_ui.dart`。
+> 仍在使用 `package:flutter/material.dart` 的应用可以继续使用,但 Toast
+> 会回退到默认的 Material 主题。
 
 #### 2. 导入BotToast库
 ``` dart

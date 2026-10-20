@@ -51,8 +51,15 @@ Loading|Text|CustomWidget
 #### 1. Add dependencies into you project pubspec.yaml file
 ``` yaml
 dependencies:
-   bot_toast: ^4.1.0 #null safety
+   bot_toast: ^5.0.0 #null safety, requires Flutter >= 3.47.0
 ```
+
+> Since Flutter 3.47 the Material and Cupertino libraries live in the separate
+> `material_ui` and `cupertino_ui` packages. `bot_toast` is built against
+> `material_ui`; apps that want their `Theme` to be picked up by toasts should
+> also import `package:material_ui/material_ui.dart`. Apps that still use
+> `package:flutter/material.dart` keep working, but toasts fall back to the
+> default Material theme.
 
 #### 2. Import BotToast Lib
 ``` dart
